@@ -62,3 +62,36 @@ CREATE TABLE projects (
     status ENUM('Berjalan', 'Selesai', 'Pending', 'Telat') DEFAULT 'Pending',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
+
+### 4. Konfigurasi Koneksi (Opsional)
+Jika MySQL di komputer Anda menggunakan password (bawaan XAMPP/Laragon biasanya kosong), edit file api/db.php:
+
+```PHP
+$host = "localhost";
+$user = "root";
+$pass = ""; // <-- Isi password jika ada
+$db   = "jadwal_proyek";
+```
+
+### 5. Jalankan Aplikasi
+Buka browser dan akses alamat berikut: http://localhost/jadwal-proyek (Sesuaikan dengan nama folder).
+
+📂 Struktur Folder
+
+```Plaintext
+jadwal-proyek/
+├── api/             # Backend (PHP Native)
+│   ├── db.php       # Koneksi Database
+│   ├── create.php   # API Tambah Data
+│   ├── read.php     # API Baca Data
+│   ├── update.php   # API Edit Data
+│   └── delete.php   # API Hapus Data
+├── js/              # Logika Frontend
+│   ├── index.js     # Fetch API untuk Tabel
+│   └── manage.js    # Logic Form Tambah/Edit
+├── index.html       # Halaman Utama (Tabel)
+├── manage.html      # Halaman Form
+├── style.css        # Styling Tampilan
+└── bg.jpg           # Background Image
+```
