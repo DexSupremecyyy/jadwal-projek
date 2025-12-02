@@ -1,0 +1,244 @@
+/* =========================================================
+   COLOR PALETTE
+   ========================================================= */
+:root {
+    --eggshell: #F7F3E9;
+    --pale-aqua: #C8E6E8;
+    --sage-green: #A8C3A1;
+    --yellow: #F4D35E;
+    --text-dark: #333;
+}
+
+
+/* =========================================================
+   GLOBAL STYLING
+   ========================================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    /* Background gradasi */
+    background: linear-gradient(to bottom, var(--pale-aqua), var(--sage-green));
+    color: var(--text-dark);
+}
+
+
+/* =========================================================
+   NAVBAR / HEADER
+   ========================================================= */
+header, 
+.navbar {
+    background: var(--sage-green);
+    color: white;
+
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   CONTAINER UTAMA
+   ========================================================= */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+
+    background: var(--eggshell);
+    padding: 25px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   TABLE STYLING
+   ========================================================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Header tabel */
+thead {
+    background: var(--sage-green);
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Warna baris genap */
+tr:nth-child(even) {
+    background: #ffb700ff;
+}
+
+/* Tombol aksi dalam tabel */
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.edit {
+    background: var(--yellow);
+    color: black;
+}
+
+.delete {
+    background: #e74c3c;
+}
+
+
+/* =========================================================
+   FORM INPUT STYLING
+   ========================================================= */
+.card-form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    border: 3px solid var(--yellow);
+}
+
+.card-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.btn-submit {
+    background: var(--yellow);
+    padding: 10px 18px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background: #e3c253;
+}
+
+.btn-back {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: var(--pale-aqua);
+    text-decoration: none;
+    color: black;
+}
+
+.btn-back:hover {
+    background: #b6d8da;
+}
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+.back-btn {
+    display: inline-block;
+    padding: 10px 16px;
+
+    background: var(--yellow);
+    color: black;
+
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   BUTTON-WRAPPER (POSISI KANAN)
+   ========================================================= */
+/* WRAPPER TOMBOL DIKANAN */
+.button-right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* semua tombol ke kanan */
+    gap: 10px; /* jarak antar tombol */
+    margin-bottom: 15px;
+}
+
+.button-right a {
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+}
+
+/* TOMBOL TAMBAH PROYEK */
+.button-yellow {
+    background: var(--yellow);
+    color: black !important;
+}
+
+.button-yellow:hover {
+    background: #e3c253;
+}
+
+/* TOMBOL KEMBALI */
+.button-blue {
+    background: var(--pale-aqua);
+    color: black;
+}
+
+.button-blue:hover {
+    background: #b6d8da;
+}

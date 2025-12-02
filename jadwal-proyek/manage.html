@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Kelola Proyek</title>
+</head>
+<body>
+
+
+<div class="card-form">
+  <h2>Tambah / Edit Proyek</h2>
+
+  <form id="projectForm" onsubmit="submitForm(event)">
+      <div class="form-group">
+          <label>Nama Proyek</label>
+          <input type="text" id="nama" required>
+      </div>
+
+      <div class="form-group">
+          <label>Tanggal Mulai</label>
+          <input type="date" id="mulai" required>
+      </div>
+
+      <div class="form-group">
+          <label>Tanggal Selesai</label>
+          <input type="date" id="selesai" required>
+      </div>
+
+      <div class="form-group">
+          <label>Status</label>
+          <select id="status" required>
+              <option value="Berjalan">Berjalan</option>
+              <option value="Selesai">Selesai</option>
+              <option value="Pending">Pending</option>
+          </select>
+      </div>
+
+      <button type="submit" class="btn-submit">Simpan</button>
+      <a href="index.html" class="btn-back">Kembali</a>
+  </form>
+</div>
+
+
+
+<script src="js/manage.js"></script>
+
+</body>
+</html>
