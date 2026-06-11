@@ -4,7 +4,7 @@ Aplikasi web sederhana untuk manajemen jadwal dan status proyek. Projek ini dike
 
 ---
 
-## 👥 Tim Pengembang
+## 👥 Tim Pengembangan
 
 Projek ini dikerjakan secara kolaboratif oleh:
 
